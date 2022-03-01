@@ -1,3 +1,1 @@
-export default function createTable(data) {
-  console.log(data);
-}
+export default function createTable(data) {}
