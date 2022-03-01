@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div>
+		<div className="Footer">
 			<p>Add in generic footer - sitemap/link to code / logo</p>
 		</div>
 	);
