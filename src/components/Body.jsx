@@ -15,7 +15,7 @@ export default function Body() {
 		<>
 			<DataTable data={data} />
 			<br></br>
-			{/* <Map data={data} /> */}
+			<Map data={data} />
 		</>
 	);
 }
