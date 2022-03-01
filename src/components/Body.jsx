@@ -1,25 +1,21 @@
 import Map from "./Map.jsx";
-
 import DataTable from "./DataTable.jsx";
 import { useEffect, useState } from "react";
+import fetchMeteors from "../utils/api.js";
 export default function Body() {
-  const [data, setData] = useState("");
+	const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetchFromApi().then((fetchedData) => {
-      setData(fetchedData);
-    });
-  }, []);
+	useEffect(() => {
+		fetchMeteors().then((fetchedData) => {
+			setData(fetchedData);
+		});
+	}, []);
 
-  return (
-    <>
-      <DataTable data={data} />
-    </>
-  );
-}
-
-function fetchFromApi() {
-  return fetch("https://data.nasa.gov/resource/gh4g-9sfh.json").then((data) => {
-    return data.json();
-  });
+	return (
+		<>
+			<DataTable data={data} />
+			<br></br>
+			{/* <Map data={data} /> */}
+		</>
+	);
 }
