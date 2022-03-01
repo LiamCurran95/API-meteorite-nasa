@@ -1,6 +1,6 @@
 export default function fetchMeteors() {
   return fetch(
-    "https://data.nasa.gov/api/id/gh4g-9sfh.json?$select=`name`,`id`,`nametype`,`recclass`,`mass`,`year`,`reclat`,`reclong`&$order=`:id`+ASC&$limit=2255&$offset=0"
+    "https://data.nasa.gov/api/id/gh4g-9sfh.json?$select=`name`,`id`,`nametype`,`recclass`,`mass`,`year`,`reclat`,`reclong`&$order=`:id`+ASC&$limit=400000&$offset=0"
   )
     .then((data) => {
       return data.json();
