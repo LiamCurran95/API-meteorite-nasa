@@ -22,7 +22,7 @@ export default function Body() {
 
 	return (
 		<>
-			<Sliders /> <br></br>
+			{/* <Sliders /> <br></br> */}
 			<DataTable data={data} />
 			<br></br>
 			<Map data={data} />
