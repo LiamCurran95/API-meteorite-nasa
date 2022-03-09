@@ -1,7 +1,7 @@
 const Header = () => {
 	return (
 		<div className="Header">
-			<h1 className="Title">Meteorite Map</h1>
+			<h1 className="Title">Meteorite Mapping App</h1>
 			<div className="instructions">
 				<p>This app was built using the following libraries / resources:</p>
 				<li>React JavaScript Library </li>

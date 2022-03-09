@@ -9,7 +9,6 @@ export default function Body() {
 
 	useEffect(() => {
 		fetchMeteors().then((fetchedData) => {
-			console.log(fetchedData);
 			fetchedData = fetchedData.filter((meteor) => meteor.year);
 			setData(
 				fetchedData.map((meteor) => {
